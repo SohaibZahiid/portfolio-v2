@@ -1,0 +1,114 @@
+#projects .desc {
+  text-align: center;
+  max-width: 54rem;
+  margin-inline: auto;
+}
+
+#projects .projects-list {
+  margin-top: 5rem;
+}
+
+#projects .project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+  gap: 4rem;
+}
+
+#projects .project:nth-child(2n) .images {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+#projects .project:nth-child(2n) .content {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#projects .project-image {
+  box-shadow: 0 10px 30px -15px var(--navy);
+  /* transition: var(--transition); */
+  position: relative;
+  z-index: 1;
+}
+
+#projects .project-image a {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: var(--border-radius);
+  vertical-align: middle;
+  z-index: 1;
+}
+
+#projects .project-image a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--navy);
+  opacity: 60%;
+  z-index: 10;
+  mix-blend-mode: screen;
+}
+
+#projects .project-image img {
+  min-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem #010824;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+}
+
+#projects .content h3 {
+  font-size: clamp(24px, 5vw, 28px);
+}
+
+#projects .content .desc {
+  text-align: left;
+  width: 100%;
+  margin-block: 2.5rem;
+}
+
+#projects .content h3 {
+  color: var(--lightest-slate);
+}
+
+#projects .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-secondary);
+  text-transform: capitalize;
+}
+
+#projects .tech-list .tech {
+  margin-right: 2rem;
+}
+
+#projects .project-links {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#projects .project-links svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  /* transition: var(--transition); */
+}
+
+#projects .project-links svg:hover {
+  color: var(--primary);
+}
+
+#projects .show-more {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #projects .project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

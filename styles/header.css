@@ -1,0 +1,93 @@
+.hamburger {
+  display: none;
+}
+
+header {
+  position: fixed;
+  /* width: min(var(--max-width), 95%); */
+  width: 100%;
+  padding-inline: 4rem;
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-inline: 2rem; */
+  z-index: 99;
+  backdrop-filter: blur(0.5rem);
+  color: var(--lightest-slate);
+}
+
+header h2 {
+  /* width: 50rem; */
+  font-family: var(--font-secondary);
+  cursor: pointer;
+  color: var(--primary);
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+  text-transform: capitalize;
+  font-family: var(--font-secondary);
+}
+
+header nav a:hover {
+  color: var(--primary);
+  text-shadow: 0 0 5px var(--secondary);
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    height: 40px;
+    width: 40px;
+    padding: 0.2rem;
+    /* border: 1px solid white; */
+    cursor: pointer;
+  }
+
+  .hamburger .line,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    border-radius: 999px;
+    background-color: var(--primary);
+    margin: 6px 0;
+    margin-left: auto;
+    /* transition: var(--transition); */
+  }
+
+  .hamburger::before {
+    width: 100%;
+  }
+
+  .hamburger::after {
+    width: 70%;
+  }
+
+  .hamburger.active::before {
+    transform: rotate(-45deg) translate(-7px, 8px);
+    width: 100%;
+  }
+
+  .hamburger.active .line {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  .hamburger.active::after {
+    transform: rotate(45deg) translate(-5px, -6px);
+    width: 100%;
+  }
+
+  header {
+    padding-inline: 2.5rem;
+  }
+}
