@@ -13,16 +13,8 @@
   font-size: clamp(40px, 8vw, 80px);
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--lightest-slate);
   line-height: 1;
-}
-
-#home .content span {
-  /* background-image: var(--gradient); */
-  /* background-size: 200% auto; */
-  /* animation: gradientAnimation 5s linear infinite;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; */
+  color: var(--primary);
 }
 
 #home a {
@@ -41,6 +33,5 @@
   text-align: start;
   border-left: 1rem solid var(--primary);
   padding-left: 2rem;
-  color: var(--slate);
   max-width: 90rem;
 }

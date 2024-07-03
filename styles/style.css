@@ -12,8 +12,8 @@
   --secondary: #7142b6;
 
   /* V2 */
-  --text: #dac5a7;
-  --text-muted: #dac5a7;
+  --primary: #dac5a7;
+  --primary-muted: #dac5a760;
   --bg: #0e0e0e;
 
   /* gradients */
@@ -34,7 +34,7 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: var(--slate) var(--navy);
+  scrollbar-color: var(--primary) var(--bg);
 }
 
 * {
@@ -45,8 +45,8 @@ html {
 
 body {
   font-family: Poppins;
-  background-color: var(--navy);
-  color: var(--slate);
+  background-color: var(--bg);
+  color: var(--primary);
   font-size: 1.6rem;
   min-height: 100vh;
   background-image: repeating-linear-gradient(
@@ -101,7 +101,6 @@ section {
 .subheading {
   font-size: 3rem;
   font-family: var(--font-secondary), system-ui;
-  color: var(--lightest-slate);
 }
 
 .btn {
@@ -111,7 +110,6 @@ section {
   padding: 1.5rem 3rem;
   border-radius: 5px;
   transition: var(--transition);
-  color: var(--lightest-slate);
   font-family: var(--font-secondary);
 }
 

@@ -105,7 +105,7 @@ const animations = () => {
         opacity: 0,
         stagger: 0.2,
         scrollTrigger: {
-          // markers: true,
+          markers: true,
           start: "top 80%",
           end: "top 40%",
           trigger: "#contact",

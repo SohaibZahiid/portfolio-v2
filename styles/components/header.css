@@ -14,7 +14,6 @@ header {
   /* padding-inline: 2rem; */
   z-index: 99;
   backdrop-filter: blur(0.5rem);
-  color: var(--lightest-slate);
 }
 
 header h2 {
@@ -47,7 +46,7 @@ header nav a:hover {
     top: 0;
     height: 100vh;
     width: min(75vw, 400px);
-    background-color: var(--light-navy);
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     justify-content: center;

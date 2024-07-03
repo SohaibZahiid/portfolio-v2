@@ -15,7 +15,6 @@
 
 #about .content .inner {
   flex: 3;
-  color: var(--slate);
 }
 
 #about .content .image {

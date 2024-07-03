@@ -8,7 +8,6 @@
 }
 
 #contact .desc {
-  color: var(--slate);
   max-width: 54rem;
   margin-inline: auto;
 }

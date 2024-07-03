@@ -4,7 +4,6 @@
   bottom: 0;
   left: 4rem;
   z-index: 10;
-  color: var(--light-slate);
 }
 
 #socials ul {
@@ -19,7 +18,7 @@
   width: 1px;
   /* height: 50vh; */
   height: 90px;
-  background-color: var(--slate);
+  background-color: var(--primary);
 }
 
 #socials ul a {
@@ -59,7 +58,7 @@
   width: 1px;
   /* height: 50vh; */
   height: 90px;
-  background-color: var(--slate);
+  background-color: var(--primary);
 }
 
 #email .left a {
