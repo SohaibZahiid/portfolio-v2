@@ -1,20 +1,14 @@
 import "../styles/style.css";
-import "../styles/header.css";
-import "../styles/home.css";
-import "../styles/about.css";
-import "../styles/projects.css";
-import "../styles/contact.css";
-import "../styles/footer.css";
-import "../styles/socials.css";
+import "../styles/components/header.css";
+import "../styles/components/home.css";
+import "../styles/components/about.css";
+import "../styles/components/projects.css";
+import "../styles/components/contact.css";
+import "../styles/components/footer.css";
+import "../styles/components/socials.css";
 
-const menuBtn = document.querySelector(".hamburger");
+import mobileNav from "./utils/mobile-nav";
+import animations from "./utils/animations";
 
-menuBtn.addEventListener("click", () => {
-  menuBtn.classList.toggle("active");
-});
-
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 768) {
-    menuBtn.classList.remove("active");
-  }
-});
+animations();
+mobileNav();

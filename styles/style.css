@@ -11,6 +11,11 @@
   --primary: #64ffda;
   --secondary: #7142b6;
 
+  /* V2 */
+  --text: #dac5a7;
+  --text-muted: #dac5a7;
+  --bg: #0e0e0e;
+
   /* gradients */
   --gradient: linear-gradient(to right, #7be728, #f3265f, #7f40ac, #7be728);
 
