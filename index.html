@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/ico.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Author: Sohaib Zahid,
+    Illustrator: P. Picture, Category: Books, Price: $17.99,
+    Length: 784 pages"
+    />
     <title>Sohaib Zahid</title>
   </head>
   <body>
+    <!-- OVERLAY -->
+    <div
+      id="loadOverlay"
+      style="
+        background-color: #0a192f;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+      "
+    ></div>
+
     <!-- HEADER -->
     <header>
       <h2>
@@ -102,7 +122,7 @@
           <div class="resume">
             <a
               class="btn"
-              href="/public/Sohaib Zahid - Desarrollador Web.pdf"
+              href="/public/SohaibZahid.pdf"
               target="_blank"
               rel="noopener noreferrer"
               >Download My CV</a
@@ -172,7 +192,7 @@
           <li class="project">
             <div class="project-image">
               <div class="image-wrapper">
-                <img src="/projects/applx.png" alt="apple project image" />
+                <img src="/projects/applx2.png" alt="apple project image" />
               </div>
             </div>
             <div class="content">
@@ -190,6 +210,7 @@
                 <li class="tech">Node</li>
                 <li class="tech">Express</li>
                 <li class="tech">MongoDB</li>
+                <li class="tech">JWT</li>
                 <li class="tech">Firebase</li>
                 <li class="tech">Stripe</li>
               </ul>
@@ -239,18 +260,15 @@
           </li>
           <li class="project">
             <div class="project-image">
-              <div class="image-wrapper">
-                <img src="/projects/applx.png" alt="apple project image" />
-              </div>
+              <img src="/projects/taxy2.png" alt="apple project image" />
             </div>
             <div class="content">
-              <h3>Applx</h3>
+              <h3>Taxy</h3>
               <div class="desc">
-                I have developed and deployed Applx, a full-stack e-commerce
-                application with role-based authentication. Users can filter
-                products, make purchases through Stripe, and administrators have
-                access to a dashboard to monitor orders, users, and revenue.
-                They can also easily manage all products.
+                I have created a training application for a private school with
+                active users. This application helps people who want to obtain a
+                taxi driver's license, allowing them to practice and acquire
+                more knowledge so that they can pass the taxi exam easily.
               </div>
               <ul class="tech-list">
                 <li class="tech">React</li>
@@ -258,14 +276,11 @@
                 <li class="tech">Node</li>
                 <li class="tech">Express</li>
                 <li class="tech">MongoDB</li>
-                <li class="tech">Firebase</li>
-                <li class="tech">Stripe</li>
+                <li class="tech">JWT</li>
+                <li class="tech">Shadcn/ui</li>
               </ul>
               <div class="project-links">
-                <a
-                  href="https://github.com/SohaibZahiid/ecommerce"
-                  target="_blank"
-                >
+                <a href="https://github.com/SohaibZahiid/taxi" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
@@ -283,7 +298,7 @@
                     ></path>
                   </svg>
                 </a>
-                <a href="https://appl-x.netlify.app/" target="_blank"
+                <a href="https://tax-e.vercel.app/" target="_blank"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"

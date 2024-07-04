@@ -96,7 +96,7 @@ const animations = () => {
       },
     });
 
-    contactTl = gsap.timeline();
+    const contactTl = gsap.timeline();
 
     contactTl.from(
       ["#contact .subheading", "#contact .desc", "#contact .hello"],
@@ -105,7 +105,7 @@ const animations = () => {
         opacity: 0,
         stagger: 0.2,
         scrollTrigger: {
-          markers: true,
+          // markers: true,
           start: "top 80%",
           end: "top 40%",
           trigger: "#contact",

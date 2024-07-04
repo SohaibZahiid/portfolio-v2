@@ -29,6 +29,10 @@
   --fz-xs: 1.3rem;
 
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  --border-radius: 5px;
+
+  --text-shadow: 0 0 15px var(--primary);
 }
 
 html {
@@ -73,6 +77,10 @@ body::before {
   border-radius: 50% 50% 0 0;
   pointer-events: none;
   filter: blur(250px);
+}
+
+#loadOverlay {
+  display: none;
 }
 
 a {

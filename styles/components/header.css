@@ -31,8 +31,7 @@ header nav {
 }
 
 header nav a:hover {
-  color: var(--primary);
-  text-shadow: 0 0 5px var(--secondary);
+  text-shadow: var(--text-shadow);
 }
 
 @media (max-width: 768px) {
